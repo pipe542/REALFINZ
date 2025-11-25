@@ -1,0 +1,14 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+img {
+    max-width: 90vw;
+    height: auto;
+    display: block;
+}
