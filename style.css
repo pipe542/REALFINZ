@@ -1,14 +1,33 @@
 body {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
+ user-select: none; /* Evita selección de texto e imágenes */
+ margin: 0;
+ padding: 0;
+ display: flex;
+ flex-direction: column;
+ align-items: center; /* Centra horizontalmente todo el contenido */
+ gap: 0rem;
 }
 
 img {
-    max-width: 90vw;
-    height: auto;
-    display: block;
+ max-width: 90vw;
+ height: auto;
+ display: block;
+ pointer-events: none; /* Deshabilita clic e interacciones */
+}
+
+.image-wrapper {
+ position: relative;
+ display: flex; /* Cambia a flex para centrar la imagen */
+ justify-content: center; /* Centrar horizontalmente */
+ width: 100%;
+}
+
+.blocker {
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ background: transparent;
+ cursor: default;
 }
